@@ -1,0 +1,33 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+h1{
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "Anton", sans-serif;
+    color: #000;
+}
+.par{
+    font-size: 35px;
+    font-weight: 400;
+    font-family: "Noto Serif", serif;
+    color: #000;
+}
+button{
+    background-color: blue;
+    font-size: 13px;
+    padding: 2.5% 8.5%;
+    margin-top: 2%;
+}
+button:hover{
+    background-color: #008000;
+}
+#demo p{
+    font-size: 35px;
+    font-weight: 400;
+    color: #000;
+    font-family: "Noto Serif", serif;
+}
