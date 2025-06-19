@@ -26,30 +26,6 @@ h1::after {
 h1:hover::after {
   top: 35%; 
 }
-/* .highlight-hover {
-  display: inline-block;
-  position: relative;
-  font-family: "Pacifico", cursive;
-  font-size: 50px;
-  font-weight: 500;
-  color: rgb(53, 46, 40);
-}
-
-.highlight-hover::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 40%;
-  width: 100%;
-  background-color: #fbb03b;
-  z-index: -1;
-  transition: height 0.4s ease;
-}
-
-.highlight-hover:hover::before {
-  height: 100%;
-} */
 .div-body{
      border-bottom: #000 dotted 2px;
       border-top: #000 dotted 2px;
@@ -120,7 +96,7 @@ table{
     background-color: #ffffffd0!important;
 }
 input.form-control:focus {
-  border-color: #ffc107; /* أصفر */
-  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25); /* ضي أصفر */
-  outline: none; /* شيل الإطار الأزرق الافتراضي */
+  border-color: #ffc107; 
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25); 
+  outline: none;
 }
