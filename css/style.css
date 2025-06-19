@@ -1,0 +1,126 @@
+section{
+    background-color: #F7ECDE;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  position: relative;
+  width: fit-content;
+  margin-inline: auto;
+  font-size: 3rem;
+  color: #352E28;
+  z-index: 1;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 70%;
+  background-color: #FEC260;
+  z-index: -1;
+  transition: top 0.4s ease-in-out;
+}
+
+h1:hover::after {
+  top: 35%; 
+}
+/* .highlight-hover {
+  display: inline-block;
+  position: relative;
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  font-weight: 500;
+  color: rgb(53, 46, 40);
+}
+
+.highlight-hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  background-color: #fbb03b;
+  z-index: -1;
+  transition: height 0.4s ease;
+}
+
+.highlight-hover:hover::before {
+  height: 100%;
+} */
+.div-body{
+     border-bottom: #000 dotted 2px;
+      border-top: #000 dotted 2px;
+}
+h2 {
+  font-family: "Righteous", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  background: linear-gradient(to right, #3FA55B, #B1AC12);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+h2 .icon-2{
+    color: #ACC224;
+}
+label{
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(33, 37, 41);
+}
+.btn-sub{
+    background-color: #D1512D;
+    color: #fff;
+}
+.btn-sub:hover{
+    background-color: #BB4120;
+    color: #fff;
+}
+.tab{
+    background-color: #fff;
+}
+.tab h3,.head{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "PT Sans Caption", sans-serif;
+}
+.bor{
+    border-bottom: 1px solid #F8F9FA;
+    border-top: 1px solid #F8F9FA;
+}
+.h1{
+    background-color: #FEC260;
+
+}
+section{
+    min-height: 100vh;
+}
+.visit{
+    background-color: #9EB23B;
+    color: #fff;
+}
+.visit:hover{
+    background-color:#8A9E23;
+     color: #fff;
+}
+.delete{
+    background-color: #EB1D36;
+    color: #fff;
+}
+.delete:hover{
+    background-color: #D30820;
+    color: #fff;
+}
+table{
+    background-color: #ffffffd0!important;
+}
+input.form-control:focus {
+  border-color: #ffc107; /* أصفر */
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25); /* ضي أصفر */
+  outline: none; /* شيل الإطار الأزرق الافتراضي */
+}

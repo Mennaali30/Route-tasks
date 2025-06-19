@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<section>
+    <div class="container  pt-5">
+  <h1 class="mb-5">Bookmarker</h1>
+        <div class="div-body py-4">
+        <h2 class="text-center pb-5"><i class="fa-solid fa-bookmark "></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark icon-2"></i></h2>
+        <div class="mb-3">
+            <label for="urlName" class="pb-2"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+            <input type="text" class="form-control" id="urlName" placeholder="Bookmark Name" oninput="validInputs(this,'msgName')">
+            <p class="alert alert-danger d-none " id="msgName">Please enter a valid site name(3 characters at least). Only letters, numbers, and spaces are allowed (no symbols).</p>
+
+    </div>
+<div>
+    <label for="siteUrl" class="pb-2"><i class="fa-solid fa-link"></i> Site URL</label>
+    <input type="url" class="form-control" id="siteUrl" placeholder="Website URL" oninput="validInputs(this,'msgLink')">
+    <p class="alert alert-danger d-none " id="msgLink">Please enter a valid URL. It must start with <strong>http://</strong> or <strong>https://</strong> and contain a valid domain (e.g. <em>https://example.com</em>).
+</p>
+
+</div>
+<div class="text-center">
+<button class="btn px-5 py-2 mt-4 btn-sub" type="submit" onclick="addSite()">Submit</button>
+</div>
+</div>
+<table class="table text-center mt-4" >
+    <thead class="head">
+        <tr >
+            <th>Index</th>
+            <th >Website Name</th>
+            <th>Visit</th>
+            <th >Delete</th>
+        </tr>
+    </thead>
+    <tbody id="tab">
+        
+    </tbody>
+</table>
+    </div>
+</section>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
