@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<section class="login">
+    <div class="container">
+        <div class="text-center card rounded-0 border-0">
+            <div class="mt-5 shadow-login-box mx-auto text-white text-center">
+
+            <h1>Smart Login System</h1>
+            <div class="d-flex flex-column align-items-center ">
+            <input type="email" name="email" id="email" placeholder="Enter your email" class=" my-3 rounded-1 inp form-control">
+            <p class="alert alert-danger d-none emailMsg">Enter a valid email address in the format: example@domain.com</p>
+            <input type="password" name="pass" id="password" placeholder="Enter your password"class="rounded-1 inp form-control">
+            <p class="alert alert-danger d-none passMsg">Your password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character. Example: Menna@2024</p>
+             <p  class="alert alert-danger d-none checkLog">This account is not exist ,please try again</p>
+            <button class="btn btn-outline-info rounded-1 inp btn-log login-btn">Login</button>
+            </div>
+            <p class="text-white pt-3">Don’t have an account?<a href="./html/register.html" class="text-white" > Sign Up</a></p> 
+        </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
